@@ -30,6 +30,7 @@ class LinkedList:
     
     def add(self,data):
         new_node=Node(data)
+        
         if(self.__head is None):
             self.__head=self.__tail=new_node
         else:
@@ -41,6 +42,13 @@ class LinkedList:
         while(temp is not None):
             print(temp.get_data())
             temp=temp.get_next()
+            
+    def find_node(self,data):
+        temp  =self.__head
+        while(temp != None and temp.get_data()!= data):
+            temp = temp.get_next()
+        return temp.get_data()
+    
                                               
     #You can use the below __str__() to print the elements of the DS object while debugging
     def __str__(self):
@@ -62,7 +70,6 @@ def count_nodes(biscuit_list):
     return count
     # Write your logic here
 
-    return count
 
 biscuit_list=LinkedList()
 biscuit_list.add("Goodday")
@@ -71,4 +78,7 @@ biscuit_list.add("Hide&Seek")
 biscuit_list.add("Nutrichoice")
 
 print(count_nodes(biscuit_list))
+print(biscuit_list.display())
+print(biscuit_list.find_node("Bourbon"))
+
                                               
