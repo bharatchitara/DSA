@@ -66,7 +66,7 @@ stack1=Stack(5)
 #Push all the required element(s).
 stack1.push("Shirt1")
 stack1.push("Shirt2")
-#stack1.pop()
+stack1.pop()
 stack1.display()
 
 

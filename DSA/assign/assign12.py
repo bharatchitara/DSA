@@ -1,5 +1,5 @@
 #DSA-Assgn-12
-from assign.stack import Stack
+#from assign.stack import Stack
 class Queue:
     def __init__(self,max_size):
 
@@ -67,7 +67,13 @@ class Ball:
         return self.__name
              
 #Implement Game class here
-    
+class Game:
+    def __init__(self,ball_stack):
+        
+
+
+
+
 #Use different values to test your program
 ball1=Ball("Red","A")
 ball2=Ball("Blue","B")
@@ -78,15 +84,15 @@ ball6=Ball("Green","B")
 ball7=Ball("Green","A")
 ball8=Ball("Red","B")
 
-ball_list=Stack(8)
-ball_list.push(ball1)  
-ball_list.push(ball2) 
-ball_list.push(ball3) 
-ball_list.push(ball4) 
-ball_list.push(ball5) 
-ball_list.push(ball6) 
-ball_list.push(ball7) 
-ball_list.push(ball8)   
+ball_list=Queue(8)
+ball_list.enqueue(ball1)  
+ball_list.enqueue(ball2) 
+ball_list.enqueue(ball3) 
+ball_list.enqueue(ball4) 
+ball_list.enqueue(ball5) 
+ball_list.enqueue(ball6) 
+ball_list.enqueue(ball7) 
+ball_list.enqueue(ball8)   
 
 #Create objects of Game class, invoke the methods and test the program
                                                     
